@@ -5,4 +5,4 @@ from odoo import fields, models, api
 
 class Ull(models.Model):
 	_name = "ull"
-	name = fields.Char()
+	name = fields.Char(string="Nombre")

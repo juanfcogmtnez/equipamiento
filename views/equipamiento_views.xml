@@ -3,20 +3,16 @@
 <odoo>
 	<record id="view_equipamiento_form" model="ir.ui.view">
 		<field name="name">Vista formulario de equipamiento</field>
-		<field name="model">Equipamiento</field>
+		<field name="model">equipamiento</field>
 		<field name="arch" type="xml">
 			<form>
 				<sheet>
 				<widget name="web_ribbon" title="Archivado" bg-color="bg-info" attrs="{'invisible':[('active','=',True)]}"/>
-				<field name="image_1920" widget="image" class="oe_avatar"/> 
 				<div class="oe_title">
 					<div class="o_row">
 						<h1 style="display:flex;">
 							<field name="name" class="oe_inline" placeholder="Nombre de equipamiento (español)" required="1" default_focus="1"></field>
 						</h1>
-				</div>
-				<div class="o_row">
-				<field name="ull_ids" widget="many2many_tags" style="display:flex"/>
 				</div>
 				</div>				
 				<group string="Datos principales" style="margin-top:-10px">
@@ -24,11 +20,12 @@
 					<field name="name_es"/>
 					<field name="name_fr"/>
 					<field name="name_en"/>
+					<field name="ull_ids" widget="many2many_tags"/>
 					</group>
 					<group>
 					<field name="active"></field>
 					<field name="es_datasheet" widget="boolean_toggle"/>
-					<field name="datasheet" filename="libro_filename" attrs="{'invisible':[('es_libro','=',False)]}"/>
+					<field name="datasheet" filename="libro_filename" attrs="{'invisible':[('es_datasheet','=',False)]}"/>
 					<field name="datasheet_filename" invisible="1"/>
 					</group>
 					<field name="descripcion" placeholder="Descripción..."/>
