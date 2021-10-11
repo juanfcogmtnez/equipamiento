@@ -38,5 +38,5 @@ class Equipamiento(models.Model):
 	datasheet_fr = fields.Binary(string="Fiche technique")
 	datasheet_filename_fr = fields.Char(string="Nom du fichier")
 	es_datasheet_en = fields.Boolean(string = 'Datasheet')
-	datasheet_fr = fields.Binary(string="Datasheet")
-	datasheet_filename_fr = fields.Char(string="File name")
+	datasheet_en = fields.Binary(string="Datasheet")
+	datasheet_filename_en = fields.Char(string="File name")

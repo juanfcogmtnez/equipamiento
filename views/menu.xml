@@ -11,9 +11,21 @@
 		<field name="res_model">ull</field>
 		<field name="view_mode">tree,form</field>
 	</record>
+	<record id="action_open_sub_ull" model="ir.actions.act_window">
+		<field name="name">Sub_ull</field>
+		<field name="res_model">sub_ull</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+	<record id="action_open_sub_ull_2" model="ir.actions.act_window">
+		<field name="name">Sub_ull_2</field>
+		<field name="res_model">sub_ull_2</field>
+		<field name="view_mode">tree,form</field>
+	</record>
 	<menuitem id="menu_principal" name="Equipamiento"/>
 	<menuitem id="menu_horizontal" name="Equipos" parent="menu_principal"/>
 	<menuitem id="menu_horizontal_ull" name="ULLs" parent="menu_principal"/>
 	<menuitem id="menu_vertical_equipamiento" name="Equipo" parent="menu_horizontal" action="action_open_equipamiento"/>
 	<menuitem id="menu_vertical_ull" name="Ulls" parent="menu_horizontal_ull" action="action_open_ull"/>
+	<menuitem id="menu_vertical_sub_ull" name="Sub_ull" parent="menu_horizontal_ull" action="action_open_sub_ull"/>
+	<menuitem id="menu_vertical_sub_ull_2" name="Sub_ull_2" parent="menu_horizontal_ull" action="action_open_sub_ull_2"/>
 </odoo>

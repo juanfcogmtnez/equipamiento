@@ -23,21 +23,21 @@
 					<field name="ull_ids" widget="many2many_tags"/>
 					<field name="sub_ull_ids" widget="many2many_tags"/>
 					<field name="sub_ull_2_ids" widget="many2many_tags"/>
-					<field name="tipo"/>
-					<field name="sub_tipo"/>
-					<field name="tipo_arq"/>
 					</group>
 					<group>
 					<field name="active"></field>
 					<field name="es_datasheet_es" widget="boolean_toggle"/>
-					<field name="datasheet_es" filename="libro_filename" attrs="{'invisible':[('es_datasheet','=',False)]}"/>
+					<field name="datasheet_es" filename="libro_filename" attrs="{'invisible':[('es_datasheet_es','=',False)]}"/>
 					<field name="datasheet_filename_es" invisible="1"/>
 					<field name="es_datasheet_fr" widget="boolean_toggle"/>
-					<field name="datasheet_fr" filename="libro_filename" attrs="{'invisible':[('es_datasheet','=',False)]}"/>
+					<field name="datasheet_fr" filename="libro_filename" attrs="{'invisible':[('es_datasheet_fr','=',False)]}"/>
 					<field name="datasheet_filename_fr" invisible="1"/>
 					<field name="es_datasheet_en" widget="boolean_toggle"/>
-					<field name="datasheet_en" filename="libro_filename" attrs="{'invisible':[('es_datasheet','=',False)]}"/>
+					<field name="datasheet_en" filename="libro_filename" attrs="{'invisible':[('es_datasheet_en','=',False)]}"/>
 					<field name="datasheet_filename_en" invisible="1"/>
+					<field name="tipo"/>
+					<field name="sub_tipo"/>
+					<field name="tipo_arq"/>
 					</group>
 					<field name="descripcion_es" placeholder="Descripción en español..."/>
 					<field name="descripcion_fr" placeholder="Description en français..."/>
