@@ -22,9 +22,10 @@
 				<field name="active"></field>	
 				</group>
 				<label for="detalle_ids" string="Equipamiento adscrito"></label>
-				<field name="detalle_ids">
+				<field name="equipamiento">
 				<tree>
-				<field name="name"/>
+				<field name="ull_ids"/>
+				<field name="equipamiento_es"/>
 				<field name="cantidad"/>
 				<field name="tipo"/>
 				<field name="sub_tipo"/>
