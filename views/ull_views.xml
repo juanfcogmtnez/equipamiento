@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<odoo>
+	<record id="view_ull_form" model="ir.ui.view">
+		<field name="name">Vista formulario de ull</field>
+		<field name="model">ull</field>
+		<field name="arch" type="xml">
+			<form>
+				<sheet>
+				<widget name="web_ribbon" title="Archivado" bg-color="bg-info" attrs="{'invisible':[('active','=',True)]}"/>
+				<div class="oe_title">
+					<div class="o_row">
+						<h1 style="display:flex;">
+							<field name="name" class="oe_inline" placeholder="Nombre de ULL" required="1" default_focus="1"></field>
+						</h1>
+				</div>
+				</div>				
+				<group string="Datos principales" style="margin-top:-10px">
+					<group>
+				</group>
+				<group>
+				<field name="active"></field>	
+				</group>
+				<label for="detalle_ids" string="Equipamiento adscrito"></label>
+				<field name="detalle_ids">
+				<tree>
+				<field name="name"/>
+				<field name="cantidad"/>
+				<field name="tipo"/>
+				<field name="sub_tipo"/>
+				<field name="tipo_arq"/>
+				</tree>
+				</field>
+				</group>
+			</sheet>
+			</form>
+		</field>
+	</record>
+</odoo>

@@ -12,5 +12,6 @@
 	'data':[
 	'views/menu.xml',
 	'views/equipamiento_views.xml',
+	'views/ull_views.xml',
 ],
 }

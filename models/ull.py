@@ -11,6 +11,7 @@ class Ull(models.Model):
 		inverse_name = 'ull_id',
 		string = 'Detalles',
 	)
+	active = fields.Boolean(string = 'Activo',default=True)
 
 class UllDetalle(models.Model):
 	_name="ull.detalle"
