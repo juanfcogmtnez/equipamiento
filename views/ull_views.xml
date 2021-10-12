@@ -11,30 +11,24 @@
 				<div class="oe_title">
 					<div class="o_row">
 						<h1 style="display:flex;">
-							<field name="name" class="oe_inline" placeholder="Nombre de ULL" required="1" default_focus="1"></field>
+							<field name="name" class="oe_inline" placeholder="Nombre de ULL (español)" required="1" default_focus="1"></field>
 						</h1>
 				</div>
 				</div>				
 				<group string="Datos principales" style="margin-top:-10px">
 					<group>
-				</group>
-				<group>
-				<field name="active"></field>	
-				</group>
-				<label for="detalle_ids" string="Equipamiento adscrito"></label>
-				<field name="equipamiento">
-				<tree>
-				<field name="ull_ids"/>
-				<field name="equipamiento_es"/>
-				<field name="cantidad"/>
-				<field name="tipo"/>
-				<field name="sub_tipo"/>
-				<field name="tipo_arq"/>
-				</tree>
-				</field>
-				</group>
+					<field name="name"/>
+					</group>
+					<group>
+					<field name="active"></field>
+					</group>
+					<field name="descripcion" placeholder="Descripción en español..."/>
+			</group>
+			<field name="equipamiento_ids">
+			</field>
 			</sheet>
 			</form>
 		</field>
 	</record>
 </odoo>
+
