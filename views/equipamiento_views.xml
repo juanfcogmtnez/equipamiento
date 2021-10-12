@@ -62,15 +62,4 @@
 			</tree>
 		</field>
 	</record>
-	<record id="equipamiento_ull_search" model="ir.ui.view">
-		<field name="name">Busqueda de equipamiento</field>
-		<field name="model">equipamiento</field>
-		<field name="arch" type="xml">
-			<search string="busqueda de equipamiento">
-				<field name="name" string="Nombre equipamiento"/>
-				<field name="ull_ids" string="Ull"/>
-				<filter domain="[('ull_ids','contains','Reh')]" string="Reha"  name="reha"/>
-			</search>
-		</field>
-	</record>
 </odoo>

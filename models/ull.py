@@ -8,8 +8,8 @@ class Ull(models.Model):
 	name = fields.Char(string="Nombre")
 	descripcion = fields.Text()
 	active = fields.Boolean(string="Activo",default="1")	
-	equipamiento_ids = fields.Many2many(
+	equipamiento_ull_ids = fields.Many2many(
 		comodel_name='equipamiento',
-		inverse_name = 'name',
+		inverse_name = 'ull_ids',
 		string = "Equipamiento",
 		)

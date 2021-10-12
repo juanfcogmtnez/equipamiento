@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<odoo>
+        <record id="view_sub_ull_2_form" model="ir.ui.view">
+                <field name="name">Vista formulario de sub-ull-2</field>
+                <field name="model">sub_ull_2</field>
+                <field name="arch" type="xml">
+                        <form>
+                                <sheet>
+                                <widget name="web_ribbon" title="Archivado" bg-color="bg-info" attrs="{'invisible':[('active','=',True)]}"/>
+                                <div class="oe_title">
+                                        <div class="o_row">
+                                                <h1 style="display:flex;">
+                                                        <field name="name" class="oe_inline" placeholder="Nombre de SUB-ULL-2 (español)" required="1" default_focus="1"></field>
+                                                </h1>
+                                </div>
+                                </div>
+                                <group string="Datos principales" style="margin-top:-10px">
+                                        <group>
+                                        <field name="name"/>
+                                        </group>
+                                        <group>
+                                        <field name="active"></field>
+                                        </group>
+                                        <field name="descripcion" placeholder="Descripción en español..."/>
+                        </group>
+                        <field name="equipamiento_sub_ull_2_ids">
+                        </field>
+                        </sheet>
+                        </form>
+                </field>
+        </record>
+</odoo>

@@ -24,7 +24,7 @@
 					</group>
 					<field name="descripcion" placeholder="Descripción en español..."/>
 			</group>
-			<field name="equipamiento_ids">
+			<field name="equipamiento_ull_ids">
 			</field>
 			</sheet>
 			</form>

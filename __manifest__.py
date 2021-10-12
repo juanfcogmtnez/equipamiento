@@ -13,5 +13,7 @@
 	'views/menu.xml',
 	'views/equipamiento_views.xml',
 	'views/ull_views.xml',
+	'views/sub_ull_views.xml',
+	'views/sub_ull_2_views.xml',
 ],
 }
