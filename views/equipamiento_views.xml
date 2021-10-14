@@ -20,29 +20,62 @@
 					<field name="name_es"/>
 					<field name="name_fr"/>
 					<field name="name_en"/>
-					<field name="ull_ids" widget="many2many_tags"/>
-					<field name="sub_ull_ids" widget="many2many_tags"/>
-					<field name="sub_ull_2_ids" widget="many2many_tags"/>
 					</group>
 					<group>
 					<field name="active"></field>
-					<field name="es_datasheet_es" widget="boolean_toggle"/>
-					<field name="datasheet_es" filename="libro_filename" attrs="{'invisible':[('es_datasheet_es','=',False)]}"/>
-					<field name="datasheet_filename_es" invisible="1"/>
-					<field name="es_datasheet_fr" widget="boolean_toggle"/>
-					<field name="datasheet_fr" filename="libro_filename" attrs="{'invisible':[('es_datasheet_fr','=',False)]}"/>
-					<field name="datasheet_filename_fr" invisible="1"/>
-					<field name="es_datasheet_en" widget="boolean_toggle"/>
-					<field name="datasheet_en" filename="libro_filename" attrs="{'invisible':[('es_datasheet_en','=',False)]}"/>
-					<field name="datasheet_filename_en" invisible="1"/>
-					<field name="tipo"/>
-					<field name="sub_tipo"/>
-					<field name="tipo_arq"/>
 					</group>
 					<field name="descripcion_es" placeholder="Descripción en español..."/>
 					<field name="descripcion_fr" placeholder="Description en français..."/>
 					<field name="descripcion_en" placeholder="Description in english..."/>
 				</group>
+					 <notebook>
+						<page string="General" name="General">
+						<group>
+						<group string="Llaves" name="llaves">
+						<field name="ull_ids" widget="many2many_tags"/>
+                                        	<field name="sub_ull_ids" widget="many2many_tags"/>
+                                        	<field name="sub_ull_2_ids" widget="many2many_tags"/>
+						</group>
+						<group string="Topología" name="topologia">
+        	                                <field name="tipo"/>
+                	                        <field name="sub_tipo"/>
+                        	                <field name="tipo_arq"/>		
+						</group>
+						</group>
+						</page>
+                       				<page string="Características" name="caracteristicas">
+						<group>
+						<group string="Físicas">
+						<field name="car_alto" string="Alto (cm)"/>
+						<field name="car_ancho" string="Ancho (cm)"/>
+						<field name="car_largo" string="Profundidad (cm)"/>
+						<field name="car_peso" string="Peso (kg)"/>
+						<field name="superficie" string="Superficie (m2)"/>
+						</group>
+						 <group string="Fichas">
+                                                <field name="es_datasheet_es" widget="boolean_toggle"/>
+                                                <field name="datasheet_es" filename="libro_filename" attrs="{'invisible':[('es_datasheet_es','=',False)]}"/>
+                                                <field name="datasheet_filename_es" invisible="1"/>
+                                                <field name="es_datasheet_fr" widget="boolean_toggle"/>
+                                                <field name="datasheet_fr" filename="libro_filename" attrs="{'invisible':[('es_datasheet_fr','=',False)]}"/>
+                                                <field name="datasheet_filename_fr" invisible="1"/>
+                                                <field name="es_datasheet_en" widget="boolean_toggle"/>
+                                                <field name="datasheet_en" filename="libro_filename" attrs="{'invisible':[('es_datasheet_en','=',False)]}"/>
+                                                <field name="datasheet_filename_en" invisible="1"/>
+                                                </group>
+						</group>
+						</page>
+						<page string="Preinstalaciones" name="preinstalaciones">
+						<group col="6">
+						<field name="estructura" string="¿Necesita el equipamiento de cambios en la estructura del edificio?"/>
+						<field name="conex_agua" string="¿Necesita el equipo conexión a circuito de agua corriente?"/>
+						<field name="conex_tta" string="¿Necesita el equipo conexión a circuito de agua especial?"/>
+						<field name="conex_elect" string="¿Necesita el equipo conexión a circuito de electricidad corriente?"/>
+						<field name="conex_ups" string="¿Necesita el equipo conexión a circuito eléctrico de emergencia?"/>
+						<field name="conex_com" string="¿Necesita el equipo conexión a red de comunicaciones"/>
+						</group>
+						</page>
+					</notebook>
 			</sheet>
 			</form>
 		</field>
