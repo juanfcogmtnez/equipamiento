@@ -3,7 +3,7 @@
 {
 	'name':'Módulo de equipamiento',
 	'version':'1.0',
-	'depends':['base'],
+	'depends':['product'],
 	'author':'Juan Fco Garcia',
 	'category':'Consultoría',
 	'description':'''

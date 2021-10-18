@@ -5,9 +5,9 @@ from odoo import fields, models, api
 
 class Equipamiento(models.Model):
 	_name = "equipamiento"
-	_inherit = ['image.mixin']
-	name = fields.Char(string='Equipo')
-	name_es = fields.Char(string='Equipo')
+	_inherits = {'product.template': 'equipamiento_name'}
+	equipamiento_name = fields.Many2one('product.template')
+	name_es = fields.Char(string='Equipamiento')
 	name_fr = fields.Char(string='Équipement')
 	name_en = fields.Char(string='Equipment')
 	active = fields.Boolean(string = 'Activo',default=True)

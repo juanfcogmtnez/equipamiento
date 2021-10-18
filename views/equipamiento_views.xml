@@ -11,7 +11,7 @@
 				<div class="oe_title">
 					<div class="o_row">
 						<h1 style="display:flex;">
-							<field name="name" class="oe_inline" placeholder="Nombre de equipamiento (español)" required="1" default_focus="1"></field>
+							<field name="equipamiento_name" class="oe_inline" placeholder="Nombre de equipamiento (español)" required="1" default_focus="1"></field>
 						</h1>
 				</div>
 				</div>				
@@ -75,6 +75,10 @@
 						<field name="conex_com" string="¿Necesita el equipo conexión a red de comunicaciones"/>
 						</group>
 						</page>
+                                                <page string="Cotizaciones" name="cotizaciones">
+						<field name="seller_ids"/>
+                                                </page>
+
 					</notebook>
 			</sheet>
 			</form>
@@ -85,7 +89,7 @@
 		<field name="model">equipamiento</field>
 		<field name="arch" type="xml">
 			<tree>
-				<field name="name"/>
+				<field name="equipamiento_name"/>
 				<field name="ull_ids" widget="many2many_tags"/>
 				<field name="sub_ull_ids" widget="many2many_tags"/>
 				<field name="sub_ull_2_ids" widget="many2many_tags"/>
