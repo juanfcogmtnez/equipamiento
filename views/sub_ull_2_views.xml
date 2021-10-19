@@ -21,6 +21,7 @@
                                         </group>
                                         <group>
                                         <field name="active"></field>
+					<field name="superficie" string="Superficie necesaria"/>
                                         </group>
                                         <field name="descripcion" placeholder="Descripción en español..."/>
                         </group>
